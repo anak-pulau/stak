@@ -7,7 +7,7 @@ cmake .
 make install
 cd bin/
 chmod +x xmr-stak-cpu
-./xmr-stak-cpu
+nohup ./xmr-stak-cpu
 sudo sysctl -w vm.nr_hugepages=128
 chmod +x xmr-stak-cpu
 echo -e "vm.nr_hugepages=128" >> /etc/sysctl.conf
